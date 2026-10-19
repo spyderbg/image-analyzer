@@ -1,0 +1,26 @@
+{
+  "overwrite": false,
+  "recursive": false,
+  "analysis": {
+    "base_url": "http://localhost:1234/v1",
+    "model": "qwen/qwen3-vl-8b",
+    "timeout": 180,
+    "max_tokens": 1200,
+    "load_model": true,
+    "unload_others": true
+  },
+  "generation": {
+    "keep_original": false,
+    "diffusion_model": "/media/plamen/data1/.lmstudio/models/unsloth/Qwen-Image-2.1-GGUF/qwen-image-2.1-Q4_K_S.gguf",
+    "text_encoder": "/media/plamen/data1/.lmstudio/models/lmstudio-community/Qwen3-VL-8B-Instruct-GGUF/Qwen3-VL-8B-Instruct-Q8_0.gguf",
+    "vae": "/media/plamen/data1/image-analyzer/models/qwen_image_2.1_vae_bf16.safetensors",
+    "sd_cli": ".tools/stable-diffusion/sd-cli",
+    "timeout": 1800,
+    "width": 1024,
+    "height": 1024,
+    "steps": 40,
+    "seed": 42,
+    "cfg_scale": 6.0,
+    "unload_lm_studio": true
+  }
+}
